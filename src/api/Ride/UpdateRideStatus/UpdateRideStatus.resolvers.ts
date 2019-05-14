@@ -40,10 +40,13 @@ const resolvers: Resolvers = {
                 ride.save();
               }
             } else {
-              ride = await Ride.findOne({
-                id: args.rideId,
-                driver: user
-              });
+              ride = await Ride.findOne(
+                {
+                  id: args.rideId,
+                  driver: user
+                },
+                { relations: ["passenger"] }
+              );
             }
             if (ride) {
               ride.status = args.status;
@@ -51,24 +54,28 @@ const resolvers: Resolvers = {
               pubSub.publish("rideUpdate", { RideStatusSubscription: ride });
               return {
                 ok: true,
-                error: null
+                error: null,
+                rideId: ride.id
               };
             } else {
               return {
                 ok: false,
-                error: "Cant update ride"
+                error: "Cant update ride",
+                rideId: null
               };
             }
           } catch (error) {
             return {
               ok: false,
-              error: error.message
+              error: error.message,
+              rideId: null
             };
           }
         } else {
           return {
             ok: false,
-            error: "You are not driving"
+            error: "You are not driving",
+            rideId: null
           };
         }
       }

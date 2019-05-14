@@ -2,12 +2,12 @@ import { ConnectionOptions } from "typeorm";
 
 const connectionOptions: ConnectionOptions = {
   type: "postgres",
-  database: "nuber",
+  database: "maseungjun",
   synchronize: true,
   logging: true,
   entities: ["entities/**/*.*"],
   host: process.env.DB_ENDPOINT,
-  port: 5432,
+  port: 5433,
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD
 };
