@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nuber-server
 
 Server for the (N)Uber Clone Course on Nomad Academy. GraphQL, Typescript, NodeJS
@@ -50,3 +51,6 @@ Server for the (N)Uber Clone Course on Nomad Academy. GraphQL, Typescript, NodeJ
 
 - [ ] Get Ride History
 - [ ] See Ride Detail
+=======
+# sp-server
+>>>>>>> 142fa95ec5582176e7d4191c4ce2ecebd1bc89e4
