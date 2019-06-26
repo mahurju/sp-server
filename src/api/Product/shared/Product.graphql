@@ -3,8 +3,8 @@ type Product {
   name: String!
   link: String!
   img: String!
-  price: String!
-  retailPrice: String!
+  price: Int
+  retailPrice: Int
   storeId: String!
   color: String!
   textColor: String!
