@@ -1,0 +1,8 @@
+type Store {
+  id: String!
+  name: String!
+  icon: String!
+  color: String!
+  textColor: String!
+  products: [Product]
+}

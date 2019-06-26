@@ -1,0 +1,12 @@
+type Product {
+  id: String!
+  name: String!
+  link: String!
+  img: String!
+  price: String!
+  retailPrice: String!
+  storeId: String!
+  color: String!
+  textColor: String!
+  store: Store!
+}

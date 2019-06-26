@@ -1,0 +1,44 @@
+[
+  {
+    "id": "hwqksq6",
+    "name": "CAFE ROYAL(カフェロイヤル)",
+    "icon": "key",
+    "color": "#a6cee3",
+    "textColor": "#000"
+  },
+  {
+    "id": "bc03zo",
+    "name": "任天堂",
+    "icon": "git-pull-request",
+    "color": "#1f78b4",
+    "textColor": "#fff"
+  },
+  {
+    "id": "elm59k5",
+    "name": "デコレ(Decole)",
+    "icon": "bold",
+    "color": "#b2df8a",
+    "textColor": "#000"
+  },
+  {
+    "id": "hwtyzrq",
+    "name": "UCC(ユーシーシー)",
+    "icon": "lock",
+    "color": "#33a02c",
+    "textColor": "#fff"
+  },
+  {
+    "id": "b6alpru",
+    "name": "おもちゃ",
+    "icon": "text-size",
+    "color": "#fb9a99",
+    "textColor": "#000"
+  },
+  {
+    "id": "f1jdxsq",
+    "name": "apple",
+    "icon": "heart",
+    "color": "#e31a1c",
+    "textColor": "#fff"
+  }
+]

@@ -1,0 +1,16 @@
+type GetStoreResponse {
+  ok: Boolean!
+  error: String
+  store: Store
+}
+
+type GetAllStoreResponse {
+  ok: Boolean!
+  error: String
+  stores: [Store]
+}
+
+type Query {
+  GetStore(storeId: String!): GetStoreResponse!
+  GetAllStore: GetAllStoreResponse!
+}
